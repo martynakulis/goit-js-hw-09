@@ -22,6 +22,7 @@ function createPromise(position, delay) {
 
 const submitHandler = event => {
   event.preventDefault();
+
   const {
     elements: { delay, step, amount },
   } = event.currentTarget;
