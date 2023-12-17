@@ -50,6 +50,7 @@ const options = {
     difference = selectedDates[0].getTime() - options.defaultDate.getTime();
 
     if (selectedDates[0].getTime() < options.defaultDate.getTime()) {
+      startBtn.setAttribute('disabled', '');
       Notiflix.Notify.failure('Please choose a date in the future');
     } else {
       startBtn.removeAttribute('disabled', '');
